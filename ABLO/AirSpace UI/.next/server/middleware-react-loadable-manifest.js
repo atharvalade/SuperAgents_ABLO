@@ -1,0 +1,1 @@
+self.__REACT_LOADABLE_MANIFEST="{\"components/Home/Hero/index.tsx -> ./map-component\":{\"id\":\"components/Home/Hero/index.tsx -> ./map-component\",\"files\":[\"static/chunks/_app-pages-browser_src_components_Home_Hero_map-component_tsx.js\"]}}"

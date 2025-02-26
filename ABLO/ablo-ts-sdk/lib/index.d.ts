@@ -1,0 +1,38 @@
+import { IAbloOptions } from './interfaces/ablo-options.interface';
+import { StorageService } from './services/storage';
+import { FontMakerService } from './services/font-maker';
+import { ImageMakerService } from './services/image-maker';
+import { PhotoTransformerService } from './services/photo-transformer';
+import { UpscaleService } from './services/upscale';
+import { BackgroundRemoverService } from './services/background-removal';
+import { StyleService } from './services/style';
+import { LedgerService } from './services/ledger';
+import { BillableActionService } from './services/billable-action';
+export declare class Ablo {
+    private axios;
+    readonly billableActions: BillableActionService;
+    readonly storage: StorageService;
+    readonly photoTransformer: PhotoTransformerService;
+    readonly imageMaker: ImageMakerService;
+    readonly fontMaker: FontMakerService;
+    readonly upscale: UpscaleService;
+    readonly removeBackground: BackgroundRemoverService;
+    readonly styles: StyleService;
+    readonly ledger: LedgerService;
+    constructor(apiKey: string, options?: IAbloOptions);
+}
+export * from './interfaces/ablo-options.interface';
+export * from './interfaces/ablo-image.interface';
+export * from './interfaces/image-generation-request.interface';
+export * from './interfaces/image-generation-response.interface';
+export * from './interfaces/single-image-generation-response.interface';
+export * from './services/background-removal/background-removal-response.interface';
+export * from './services/billable-action/billable-action.interface';
+export * from './services/font-maker/font-maker-request.interface';
+export * from './services/image-maker/image-maker-request.interface';
+export * from './services/ledger/ledger-period.interface';
+export * from './services/photo-transformer/image-file-to-image-request.interface';
+export * from './services/photo-transformer/image-url-to-image-request.interface';
+export * from './services/photo-transformer/inpainting-request.interface';
+export * from './services/style/style.interface';
+export * from './services/style/create-custom-style-request.interface';
